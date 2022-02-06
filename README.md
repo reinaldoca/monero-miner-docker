@@ -10,7 +10,7 @@ Image of latest [XMRig](https://github.com/xmrig/xmrig) version, built on Alpine
 For easy start, with default configuration.
 
 ```sh
-docker run -d --restart=always giansalex/monero-miner
+docker run -d --restart=always img/monero-miner
 ```
 
 Use your own configuration.
@@ -20,7 +20,7 @@ Use your own configuration.
 - Run container
 
 ```sh
-docker run -d -e WALLET="{YOUR_WALLET_ID}" giansalex/monero-miner
+docker run -d -e WALLET="{YOUR_WALLET_ID}" img/monero-miner
 ```
 
 |Environment       |     Description      |
@@ -33,7 +33,7 @@ docker run -d -e WALLET="{YOUR_WALLET_ID}" giansalex/monero-miner
 
 You can customize [xmrig options](https://xmrig.com/docs/miner/command-line-options).
 ```sh
-docker run -d giansalex/monero-miner /xmr/xmrig \
+docker run -d img/monero-miner /xmr/xmrig \
      -o pool.supportxmr.com:3333 \
      -u <YOUR_WALLET> \
      -k  \
@@ -49,9 +49,3 @@ docker run -d giansalex/monero-miner /xmr/xmrig \
 - [Profit Calculator](https://www.coincalculators.io/coin/monero)
 - [Mining Reward Estimates](https://www.coinwarz.com/mining/monero/calculator)
 - [Compare CPU hardware hashrate](https://monerobenchmarks.info/cpuVScpu.php)
-
-<--! ### Donate -->
-
- <> XMR Address: `49FzQ7CxFxLQsYNHnGJ8CN1BgJaBvr2FGPEiFVcbJ7KsWDRzSxyN8Sq4hHVSYehjPZLpGe26cY8b7PShd7yxtZcrRjz6xdT`
-
- <>![](./assets/wallet-qr.png) 
